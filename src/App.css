@@ -21,4 +21,14 @@
     );
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AppGlass{
+    display: grid;
+    height: 97%;
+    width: 97%;
+    border-radius: 2rem;
+    background-color: var(--glass);
 }
