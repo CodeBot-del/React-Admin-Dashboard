@@ -1,6 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 import Logo from '../../imgs/1.jpg';
+import {UilEstate} from "@iconscout/react-unicons";
 
 const Sidebar = () => {
   return (
@@ -16,7 +17,10 @@ const Sidebar = () => {
         {/* menu */}
         <div className="menu"></div>
             <div className="menuItem">
-
+                <div>
+                    <UilEstate/>
+                </div>
+                <span>Dashboard</span>
             </div>
     </div>
   )
