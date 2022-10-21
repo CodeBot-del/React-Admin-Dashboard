@@ -12,6 +12,12 @@ const Sidebar = () => {
                 sol<span>UN</span>ala
             </span>
         </div>
+
+        {/* menu */}
+        <div className="menu"></div>
+            <div className="menuItem">
+
+            </div>
     </div>
   )
 }
