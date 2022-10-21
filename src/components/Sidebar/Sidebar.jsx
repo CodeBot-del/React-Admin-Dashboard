@@ -9,7 +9,7 @@ const Sidebar = () => {
         <div className="logo">
             <img src={Logo} alt="" width="150" height="150"/>
             <span>
-                solu<span>N</span>ala
+                sol<span>UN</span>ala
             </span>
         </div>
     </div>
