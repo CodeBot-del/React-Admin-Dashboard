@@ -3,6 +3,8 @@ import './Sidebar.css';
 import Logo from '../../imgs/1.jpg';
 import { SidebarData } from '../../Data/Data';
 
+import {UilSignOutAlt} from '@iconscout/react-unicons';
+
 const Sidebar = () => {
   return (
     <div className='Sidebar'>
@@ -18,7 +20,7 @@ const Sidebar = () => {
         <div className="menu">
             {SidebarData.map((item, index)=> {
                 return(
-                    <div className="menuItem">
+                    <div className="menuItem active">
                         <item.icon/>
                         <span>
                             {item.heading}
@@ -26,6 +28,10 @@ const Sidebar = () => {
                     </div>
                 )
             })}  
+
+            <div className="menuItem">
+                <UilSignOutAlt/>
+            </div>
             </div>
         </div>
     
