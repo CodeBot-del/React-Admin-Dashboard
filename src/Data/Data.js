@@ -6,6 +6,10 @@ import {
     UilPackage,
     UilChart,
     UilSignOutAlt,
+    UilUsdSquare,
+    UilMoneyWithdrawal,
+    
+
 }   from "@iconscout/react-unicons";
 
 export const SidebarData = [
@@ -41,7 +45,7 @@ export const CardsData = [
         },  
         barValue: 70,
         value: "25,970",
-        png: 'UilUsdSquare',
+        png: UilUsdSquare,
         series: [
             {name: 'Sales',
             data: [31, 40, 28, 51, 42, 109, 100]
@@ -56,7 +60,7 @@ export const CardsData = [
         },
         barValue: 80,
         value: "14,270",
-        png: 'UilMoneyWithdrawal',
+        png: UilMoneyWithdrawal,
         series: [
             {
                 name: 'Revenue',
@@ -72,7 +76,7 @@ export const CardsData = [
         },
         barValue: 60,
         value: "4,270",
-        png: 'UilClipboardAlt',
+        png: UilClipboardAlt,
         series: [
             {
                 name: 'Expenses',
