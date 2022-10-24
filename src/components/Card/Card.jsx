@@ -62,6 +62,11 @@ function ExpandedCard({param, setExpanded}){
             <div>
                 <UilTimes onClick={setExpanded}/>
             </div>
+            <span>{param.title}</span>
+            <div className="chartContainer">
+                Chart
+            </div>
+            <span>Last 24 hours</span>
         </div>
     )
 }
