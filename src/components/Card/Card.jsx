@@ -11,13 +11,26 @@ const Card = (props) => {
             expanded ? (
                 <ExpandedCard/>
             ): 
-            <CompactCard/>
+            <CompactCard param = {props}/>
         }
     </AnimateSharedLayout>
   )
 }
 
 
-
+// CompactCard
+function CompactCard({param}){
+    const Png = param.png;
+    return(
+        <div className="CompactCard">
+            <div className="radialBar">
+                Chart
+            </div>
+            <div className="detail">
+                <Png/>
+            </div>
+        </div>
+    )
+}
 
 export default Card
