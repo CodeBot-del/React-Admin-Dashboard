@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './Card.css'
 import {AnimateSharedLayout} from 'framer-motion'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';

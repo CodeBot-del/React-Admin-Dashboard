@@ -1,0 +1,27 @@
+.CompactCard{
+    display: flex;
+    flex: 1;
+    height: 7rem!important;
+    border-radius: 0.7rem;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.CompactCard:hover{
+    box-shadow: none;
+}
+
+/* radial bar */
+.radialBar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.CircularProgressbar-path{
+    stroke: white!important;
+    stroke-width: 12px !important;
+}
