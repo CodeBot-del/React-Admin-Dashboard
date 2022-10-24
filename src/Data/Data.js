@@ -8,7 +8,7 @@ import {
     UilSignOutAlt,
     UilUsdSquare,
     UilMoneyWithdrawal,
-    
+    UilReceiptAlt,
 
 }   from "@iconscout/react-unicons";
 
@@ -45,7 +45,7 @@ export const CardsData = [
         },  
         barValue: 70,
         value: "25,970",
-        png: UilUsdSquare,
+        png: UilReceiptAlt,
         series: [
             {name: 'Sales',
             data: [31, 40, 28, 51, 42, 109, 100]
@@ -71,7 +71,7 @@ export const CardsData = [
     {
         title: "Expenses",
         color: {
-            backGround: "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42)",
+            backGround: "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
             boxShadow: "0px 10px 20px 0px #FDC0C7",
         },
         barValue: 60,
