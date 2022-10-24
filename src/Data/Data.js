@@ -30,3 +30,13 @@ export const SidebarData = [
         heading: "Analytics",
     }
 ];
+
+// dashboard cards array
+export const CardsData = [
+    {
+        title: "Sales",
+        color: {
+            background: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+        },  
+    },
+];
