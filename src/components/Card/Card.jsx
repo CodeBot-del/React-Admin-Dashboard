@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './Card.css'
 import {AnimateSharedLayout} from 'framer-motion'
 import { CircularProgressbar } from 'react-circular-progressbar';
+import Chart from 'react-apexcharts';
 import 'react-circular-progressbar/dist/styles.css';
 import {UilTimes} from '@iconscout/react-unicons';
 
@@ -52,6 +53,32 @@ function CompactCard({param, setExpanded}){
 
 // ExpandedCard
 function ExpandedCard({param, setExpanded}){
+
+    const data = {
+        options:{
+            chart: {
+                type: 'area',
+                height: 'auto',
+            },
+            dropShadow: {
+                enabled: false,
+                enabledOnSeries: undefined,
+                top: 0,
+                left: 0,
+                blur: 3,
+                color: "#000",
+                opacity: 0.35,
+            },
+            fill: {
+                colors: ["#fff"],
+                type: 'gradient',
+            },
+            dataLabels: {
+                enabled: false,
+            },
+        }
+    }
+
     return(
         <div className="ExpandedCard"
         style={{
@@ -64,7 +91,7 @@ function ExpandedCard({param, setExpanded}){
             </div>
             <span>{param.title}</span>
             <div className="chartContainer">
-                Chart
+                <Chart series={param.series} type='area' options={data.options}/>
             </div>
             <span>Last 24 hours</span>
         </div>
