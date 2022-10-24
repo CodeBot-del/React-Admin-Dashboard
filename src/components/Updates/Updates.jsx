@@ -3,8 +3,8 @@ import './Updates.css'
 
 const Updates = () => {
   return (
-    <div>
-      Updates
+    <div className="Updates">
+      
     </div>
   )
 }
