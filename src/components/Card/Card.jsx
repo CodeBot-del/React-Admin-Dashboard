@@ -14,7 +14,7 @@ const Card = (props) => {
             expanded ? (
                 'Expanded'
             ): 
-            <CompactCard param = {props}/>
+            <CompactCard param = {props} setExpanded={()=>setExpanded}/>
         }
     </AnimateSharedLayout>
   )
@@ -22,7 +22,7 @@ const Card = (props) => {
 
 
 // CompactCard
-function CompactCard({param}){
+function CompactCard({param, setExpanded}){
     const Png = param.png;
     return(
         <div className="CompactCard"
@@ -37,6 +37,7 @@ function CompactCard({param}){
                     value={param.barValue}
                     text={`${param.barValue}%`}
                 />
+                <span>{param.title}</span>
             </div>
             <div className="detail">
                 <Png/>
