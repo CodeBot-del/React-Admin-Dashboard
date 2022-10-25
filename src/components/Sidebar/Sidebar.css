@@ -83,7 +83,7 @@
     .Sidebar{
         position: fixed;
         z-index: 9;
-        background: #f5f5f5;
+        background: #f0f0f0;
         width: 55%;
         padding-right: 1rem;
         height: 100%;
@@ -97,5 +97,14 @@
     .menu .menuItem:last-child{
         position: relative;
         margin-top: 2rem;
+    }
+    .bars{
+        display: flex;
+        position: fixed;
+        top: 2rem;
+        z-index: 9;
+        background: #f0f0f0;
+        padding: 10px;
+        border-radius: 10px;
     }
 }
