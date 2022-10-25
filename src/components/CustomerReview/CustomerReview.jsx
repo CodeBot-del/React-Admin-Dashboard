@@ -1,9 +1,63 @@
 import React from "react";
+import Chart from 'react-apexcharts';
 
 const CustomerReview = () => {
+
+    const data = {
+        series: [
+            {
+                name: "Review",
+                data: [10, 50, 30, 90, 40, 120, 100],
+            },
+        ],
+        options: {
+            chart: {
+                type: "area",
+                height: "auto",
+            },
+            fill: {
+                colors: ["#fff"],
+                type: "gradient",
+            },
+            dataLabels:{
+                enabled: false,
+            },
+            stroke: {
+                curve: "smooth",
+                colors: ["#ff929f"],
+            },
+            tooltip:{
+                x: {
+                    formart: "dd/MM/yy HH:mm",
+                },
+            },
+            grid: {
+                show: false,
+            },
+            xaxis: {
+                type: "datetime",
+                categories: [
+                    "2021-09-19T00:00:00",
+                    "2021-09-19T01:30:00",
+                    "2021-09-19T02:30:00",
+                    "2021-09-19T03:30:00",
+                    "2021-09-19T04:30:00",
+                    "2021-09-19T05:30:00",
+                    "2021-09-19T06:30:00",
+                ],
+            },
+            yaxis: {
+                show: false
+            },
+            toolbar:{
+                show: false
+            }
+        }
+    }
+
     return (
         <div className="CustomerReview">
-            Here is the customer review section
+            <Chart series={data.series} options={data.options} type="area"/>
         </div>
     );
 };
