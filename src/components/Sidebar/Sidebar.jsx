@@ -3,12 +3,19 @@ import './Sidebar.css';
 import Logo from '../../imgs/1.jpg';
 import { SidebarData } from '../../Data/Data';
 
-import {UilSignOutAlt} from '@iconscout/react-unicons';
+import {UilSignOutAlt, UilBars} from '@iconscout/react-unicons';
 
 const Sidebar = () => {
     const [selected, setSelected] = useState(0)
+    const [expanded, setExpanded] = useState(true)
+
   return (
+    <>
+    
     <div className='Sidebar'>
+        <div>
+            <UilBars/>
+        </div>
         {/* logo */}
         <div className="logo">
             <img src={Logo} alt="" width="150" height="150"/>
@@ -39,6 +46,7 @@ const Sidebar = () => {
             </div>
             </div>
         </div>
+        </>
     
   )
 }

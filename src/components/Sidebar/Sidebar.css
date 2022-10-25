@@ -81,6 +81,21 @@
 
 @media screen and (max-width: 768px){
     .Sidebar{
-        display: none;
+        position: fixed;
+        z-index: 9;
+        background: #f5f5f5;
+        width: 55%;
+        padding-right: 1rem;
+        height: 100%;
+    }
+    .menuItem>span{
+        display: block;
+    }
+    .logo{
+        display: flex;
+    }
+    .menu .menuItem:last-child{
+        position: relative;
+        margin-top: 2rem;
     }
 }
