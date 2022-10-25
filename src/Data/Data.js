@@ -12,6 +12,11 @@ import {
 
 }   from "@iconscout/react-unicons";
 
+import img1 from '../imgs/1.jpg'
+import img2 from '../imgs/2.jpg'
+import img3 from '../imgs/3.jpg'
+
+
 export const SidebarData = [
     {
         icon: UilEstate,
@@ -85,3 +90,26 @@ export const CardsData = [
         ],
     },
 ];
+
+// Recent Update Card Data 
+export const UpdateData = [
+    {
+        img: img1,
+        name: "Andrew Thomas",
+        noti: "Has ordered Apple Smart watch 2500mh battery",
+        time: "25 seconds ago",
+    },
+    {
+        img: img2,
+        name: "James Bond",
+        noti: "Has ordered Samsung S22 2500mh battery",
+        time: "30 seconds ago",
+    },
+    {
+        img: img3,
+        name: "Iron Man",
+        noti: "Has ordered Motorolla S22 2500mh battery",
+        time: "30 seconds ago",
+    },
+    
+]
