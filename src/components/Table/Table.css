@@ -13,3 +13,10 @@
 .Table:first-child{
     border-radius: 0.7rem !important;
 }
+
+@media screen and (max-width: 1200px){
+    .Table{
+        width: 172%;
+        margin-top: 2rem;
+    }
+}
