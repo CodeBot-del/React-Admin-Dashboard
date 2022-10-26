@@ -67,7 +67,7 @@ export const CardsData = [
         ]
     },
     {
-        title: "Revenue",
+        title: "Products Out",
         color: {
             backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
             boxShadow: "0px 10px 20px 0px #FDC0C7",
@@ -77,13 +77,13 @@ export const CardsData = [
         png: UilMoneyWithdrawal,
         series: [
             {
-                name: 'Revenue',
+                name: 'Products Out',
                 data: [10, 100, 50, 70, 80, 30, 40], 
             },
         ],
     },
     {
-        title: "Expenses",
+        title: "Delivered",
         color: {
             backGround: "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
             boxShadow: "0px 10px 20px 0px #FDC0C7",
@@ -93,7 +93,7 @@ export const CardsData = [
         png: UilClipboardAlt,
         series: [
             {
-                name: 'Expenses',
+                name: 'Delivered',
                 data: [10, 25, 15, 30, 80, 12, 15, 20],
             },
         ],

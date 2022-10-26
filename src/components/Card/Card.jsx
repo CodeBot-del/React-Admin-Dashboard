@@ -45,7 +45,7 @@ function CompactCard({param, setExpanded}){
             </div>
             <div className="detail">
                 <Png/>
-                <span>TZS {param.value}</span>
+                <span>{param.title === "Sales"? `TZS ${param.value}`: param.value}</span>
                 <span>Last 24 hours</span>
             </div>
         </motion.div>
