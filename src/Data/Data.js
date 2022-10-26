@@ -1,4 +1,6 @@
 // Sidebar imports
+import React, {useState, useEffect} from 'react'
+
 import {
     UilEstate,
     UilClipboardAlt,
@@ -12,9 +14,13 @@ import {
 
 }   from "@iconscout/react-unicons";
 
+
+
 import img1 from '../imgs/1.jpg'
 import img2 from '../imgs/2.jpg'
 import img3 from '../imgs/3.jpg'
+
+
 
 
 export const SidebarData = [
@@ -41,7 +47,10 @@ export const SidebarData = [
 ];
 
 // dashboard cards array
+
 export const CardsData = [
+    
+    
     {
         title: "Sales",
         color: {
@@ -69,7 +78,7 @@ export const CardsData = [
         series: [
             {
                 name: 'Revenue',
-                data: [10, 100, 50, 70, 80, 30, 40],
+                data: [10, 100, 50, 70, 80, 30, 40], 
             },
         ],
     },
@@ -113,3 +122,4 @@ export const UpdateData = [
     },
     
 ]
+
